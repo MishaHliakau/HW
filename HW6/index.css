@@ -1,0 +1,80 @@
+.heading {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline double
+}
+
+.applePie {
+  background-color: rgba(45, 174, 216, 0.235);
+  border-color: rgba(15, 50, 62, 0.406);
+  position: relative;
+}
+
+.PieHeading,
+.cookingPie {
+  color: rgba(3, 41, 53, 0.755);
+}
+
+.ingredientsPie li:nth-child(even) {
+  color: rgba(3, 41, 53, 0.755);
+  text-decoration: underline dotted;
+}
+
+.letterPie::first-letter {
+  color: rgba(3, 41, 53, 0.755);
+}
+
+.tiramisu {
+  background-color: rgba(169, 169, 169, 0.18);
+  border-color: rgba(58, 58, 58, 0.762);
+  position: relative;
+}
+
+.tiramisuHeading,
+.cookingTiramisu {
+  color: rgba(58, 58, 58, 0.762);
+}
+
+.ingredientsTiramisu li:nth-child(odd) {
+  color: rgba(58, 58, 58, 0.762);
+  text-decoration: underline dotted;
+}
+
+.letterTiramisu::first-letter {
+  color: rgba(58, 58, 58, 0.762);
+}
+
+.cookies {
+  background-color: rgba(143, 188, 143, 0.618);
+  border-color: rgba(34, 74, 34, 0.831);
+  position: relative;
+}
+
+.cookiesHeading,
+.cookingCookies {
+  color: rgba(34, 74, 34, 0.831);
+}
+
+.ingredientsCookies li:nth-child(3n) {
+  color: rgba(34, 74, 34, 0.831);
+  text-decoration: underline wavy;
+}
+
+.letterCookies::first-letter {
+  color: rgba(34, 74, 34, 0.831);
+}
+
+.pieImage {
+  background-image: url(/Img/charlotte.jpeg);
+  border: 5px solid rgba(58, 58, 58, 0.762)
+}
+
+.tiramisuImage {
+  background-image: url(/Img/tiramisu.jpg);
+  border: 5px solid rgba(58, 58, 58, 0.762);
+}
+
+.cookiesImage {
+  background-image: url(/Img/cookies.jpeg);
+  border: 5px solid rgba(34, 74, 34, 0.831);;
+}
