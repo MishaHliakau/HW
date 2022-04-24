@@ -13,6 +13,16 @@
   box-sizing: border-box;
 }
 
+.body {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-auto-rows: auto 1fr auto;
+  grid-template-columns: minmax(auto, 1200px);
+  justify-content:center ;
+  
+}
+
   .header {
     background-color: darkseagreen;
   }
@@ -33,8 +43,14 @@
   }
 
   .navigation {
-    list-style: none;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    justify-items: center;
+    gap: 10px;
+    list-style-type: none;
     padding-left: 0;
+    padding-bottom: 20px;
   }
 
   .button {
@@ -87,7 +103,7 @@
     <main class="main">
       <h2 class="heading">Main</h2>
 
-      <div>
+      <section>
         <div class="section">1</div>
         <div class="section">2</div>
         <div class="section">3</div>
@@ -99,7 +115,7 @@
         <div class="section">9</div>
         <div class="section">10</div>
         <div class="section">11</div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer">
