@@ -1,0 +1,209 @@
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  background-color: lavender;
+}
+
+.heading {
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content:space-around;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+
+/* 
+изначально у меня был вот такой вариант стилей, 
+.button {
+  border: none;
+  background-color: lavender;
+  font-size: 14px;
+  animation-name: qwerty;
+  animation-duration: 1250ms;
+  animation-timing-function: cubic-bezier(.61,.4,.26,.99);
+  animation-fill-mode: both;
+  transition: all 1500ms;
+}
+
+
+.button:hover {
+  transform: scale(1.2);
+  color: black;
+  background-color: chocolate;
+}
+
+Но почему-то не менялся backround и color. Когда я тестировал причины и убрал animation-fill-mode: both; то после наведения курсора на button менялся уже и backround вместе c color, по этому переделал под такие стили.
+*/
+
+.button {
+  border: none;
+  background-color: darkseagreen;
+  font-size: 24px;
+  color: aliceblue;
+  padding: 8px 5px;
+  border-radius: 22px;
+  animation-name: navigation;
+  animation-duration: 1500ms;
+  animation-timing-function: cubic-bezier(.61,.4,.26,.99);
+  animation-fill-mode: backwards;
+  transition: all 1500ms;
+}
+
+
+.button:hover {
+  transform: scale(1.2);
+  color: black;
+  background-color: chocolate;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: lavender;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  animation-name: news-blocks;
+  animation-duration: 1500ms;
+  animation-timing-function: cubic-bezier(.61,.4,.26,.99);
+  animation-fill-mode: both;
+  transition: all 2000ms;
+  transition-timing-function:cubic-bezier(.38,.74,.26,1);
+}
+
+.news:hover {
+  transform: rotate(180deg);
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: aqua;
+  animation-name: ball;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function:ease-in-out;
+}
+
+.ball:hover {
+  animation-play-state: paused;
+}
+
+@keyframes navigation {
+  0% {
+    background-color: lavender;
+    font-size: 14px;
+    color: black;
+  }
+  100% {
+    background-color: darkseagreen;
+    font-size: 24px;
+    color: aliceblue;
+    padding: 8px 5px;
+    border-radius: 22px;
+  }
+}
+
+@keyframes news-blocks {
+  0% {
+    background-color: none;
+    font-size: 14px;
+    color: black;
+  }
+  100% {
+    background-color: rebeccapurple;
+    font-size: 20px;
+    color: aliceblue;
+
+  }
+}
+
+@keyframes ball {
+  0% {
+    transform: translate(5px, 100px);
+    background-color: aqua;
+  }
+  10% {
+    transform: translate(115px, 5px);
+    background-color:brown ;
+  }
+  20% {
+    transform: translate(230px, 100px);
+    background-color: cornflowerblue;
+  }
+  30% {
+    transform: translate(345px, 5px);
+    background-color: crimson;
+  }
+  40% {
+    transform: translate(460px, 100px);
+    background-color: cyan;
+  }
+  50% {
+    transform: translate(575px, 5px);
+    background-color: darkseagreen;
+  }
+  60% {
+    transform: translate(690px, 100px);
+    background-color: deepskyblue;
+  }
+  70% {
+    transform: translate(805px, 5px);
+    background-color: lawngreen;
+  }
+  80% {
+    transform: translate(920px, 100px);
+    background-color: magenta;
+  }
+  90% {
+    transform: translate(1035px, 5px);
+    background-color: navajowhite;
+  }
+  100% {
+    transform: translate(1155px, 100px);
+    background-color: yellow;
+  }
+}
+
+</style>
